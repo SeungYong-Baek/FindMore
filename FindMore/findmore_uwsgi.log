@@ -1,0 +1,493 @@
+*** Starting uWSGI 2.0.18 (64bit) on [Sun Sep 15 22:42:44 2019] ***
+compiled with version: 7.4.0 on 07 September 2019 06:02:45
+os: Linux-4.15.0-60-generic #67-Ubuntu SMP Thu Aug 22 16:55:30 UTC 2019
+nodename: POWERFUL-K55VM
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /home/seungyong/FindMore/console
+writing pidfile to /tmp/findmore_uwsgi.pid
+detected binary path: /home/seungyong/zipline/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/seungyong/FindMore
+your processes number limit is 62753
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/seungyong/FindMore/FindMore/findmore_uwsgi.sock fd 3
+Python version: 3.5.7 (default, Mar 30 2019, 01:05:18)  [GCC 7.3.0]
+PEP 405 virtualenv detected: /home/seungyong/zipline
+Set PythonHome to /home/seungyong/zipline
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55bdb3ef3690
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 437424 bytes (427 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55bdb3ef3690 pid: 20660 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 20660)
+spawned uWSGI worker 1 (pid: 20662, cores: 1)
+spawned uWSGI worker 2 (pid: 20663, cores: 1)
+spawned uWSGI worker 3 (pid: 20664, cores: 1)
+spawned uWSGI worker 4 (pid: 20665, cores: 1)
+spawned uWSGI worker 5 (pid: 20666, cores: 1)
+[pid: 20666|app: 0|req: 1/1] 127.0.0.1 () {50 vars in 1245 bytes} [Sun Sep 15 22:42:56 2019] GET / => generated 602 bytes in 1687 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+[pid: 20662|app: 0|req: 1/2] 127.0.0.1 () {50 vars in 1261 bytes} [Sun Sep 15 22:42:59 2019] GET / => generated 602 bytes in 1687 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+[pid: 20665|app: 0|req: 1/3] 127.0.0.1 () {50 vars in 1269 bytes} [Sun Sep 15 22:43:03 2019] GET /mra/ => generated 663 bytes in 1689 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+[pid: 20666|app: 0|req: 2/4] 127.0.0.1 () {50 vars in 1283 bytes} [Sun Sep 15 22:43:06 2019] GET /mra/list/ => generated 512 bytes in 16 msecs (HTTP/1.1 200) 3 headers in 109 bytes (2 switches on core 0)
+[pid: 20664|app: 0|req: 1/5] 127.0.0.1 () {50 vars in 1278 bytes} [Sun Sep 15 22:43:07 2019] GET /mra/ => generated 663 bytes in 1694 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+[pid: 20666|app: 0|req: 3/6] 127.0.0.1 () {50 vars in 1287 bytes} [Sun Sep 15 22:43:10 2019] GET /mra/create/ => generated 1376 bytes in 21 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 20663|app: 0|req: 1/7] 127.0.0.1 () {58 vars in 1473 bytes} [Sun Sep 15 22:43:23 2019] POST /mra/create/ => generated 0 bytes in 2686 msecs (HTTP/1.1 302) 4 headers in 134 bytes (1 switches on core 0)
+[pid: 20665|app: 0|req: 2/8] 127.0.0.1 () {52 vars in 1325 bytes} [Sun Sep 15 22:43:26 2019] GET /mra/list/1/ => generated 1080 bytes in 15 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 20666|app: 0|req: 4/9] 127.0.0.1 () {48 vars in 1255 bytes} [Sun Sep 15 22:43:29 2019] GET /mra/create/ => generated 1376 bytes in 8 msecs (HTTP/1.1 200) 5 headers in 292 bytes (2 switches on core 0)
+[pid: 20664|app: 0|req: 2/10] 127.0.0.1 () {58 vars in 1473 bytes} [Sun Sep 15 22:43:39 2019] POST /mra/create/ => generated 0 bytes in 1173 msecs (HTTP/1.1 302) 4 headers in 134 bytes (1 switches on core 0)
+[pid: 20665|app: 0|req: 3/11] 127.0.0.1 () {52 vars in 1325 bytes} [Sun Sep 15 22:43:41 2019] GET /mra/list/2/ => generated 1095 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 20666|app: 0|req: 5/12] 127.0.0.1 () {48 vars in 1255 bytes} [Sun Sep 15 22:43:42 2019] GET /mra/create/ => generated 1376 bytes in 10 msecs (HTTP/1.1 200) 5 headers in 292 bytes (2 switches on core 0)
+[pid: 20663|app: 0|req: 2/13] 127.0.0.1 () {58 vars in 1473 bytes} [Sun Sep 15 22:43:48 2019] POST /mra/create/ => generated 0 bytes in 866 msecs (HTTP/1.1 302) 4 headers in 134 bytes (1 switches on core 0)
+[pid: 20665|app: 0|req: 4/14] 127.0.0.1 () {52 vars in 1325 bytes} [Sun Sep 15 22:43:49 2019] GET /mra/list/3/ => generated 1103 bytes in 5 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 20664|app: 0|req: 3/15] 127.0.0.1 () {50 vars in 1280 bytes} [Sun Sep 15 22:43:51 2019] GET /mra/ => generated 663 bytes in 3 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+[pid: 20663|app: 0|req: 3/16] 127.0.0.1 () {50 vars in 1283 bytes} [Sun Sep 15 22:43:52 2019] GET /mra/list/ => generated 1091 bytes in 25 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 20666|app: 0|req: 6/17] 127.0.0.1 () {50 vars in 1278 bytes} [Sun Sep 15 22:43:54 2019] GET /mra/ => generated 663 bytes in 5 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+[pid: 20664|app: 0|req: 4/18] 127.0.0.1 () {50 vars in 1283 bytes} [Sun Sep 15 22:43:56 2019] GET /mra/list/ => generated 1091 bytes in 14 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 20665|app: 0|req: 5/19] 127.0.0.1 () {50 vars in 1296 bytes} [Sun Sep 15 22:43:58 2019] GET /mra/delete/1/ => generated 790 bytes in 9 msecs (HTTP/1.1 200) 5 headers in 291 bytes (1 switches on core 0)
+[pid: 20663|app: 0|req: 4/20] 127.0.0.1 () {58 vars in 1477 bytes} [Sun Sep 15 22:43:59 2019] POST /mra/delete/1/ => generated 0 bytes in 16 msecs (HTTP/1.1 302) 4 headers in 132 bytes (1 switches on core 0)
+[pid: 20666|app: 0|req: 7/21] 127.0.0.1 () {52 vars in 1323 bytes} [Sun Sep 15 22:43:59 2019] GET /mra/list/ => generated 902 bytes in 10 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+[pid: 20665|app: 0|req: 6/22] 127.0.0.1 () {50 vars in 1278 bytes} [Sun Sep 15 22:44:01 2019] GET /mra/ => generated 663 bytes in 3 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+[pid: 20666|app: 0|req: 8/23] 127.0.0.1 () {50 vars in 1265 bytes} [Sun Sep 15 22:44:02 2019] GET / => generated 602 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+[pid: 20665|app: 0|req: 7/24] 127.0.0.1 () {50 vars in 1269 bytes} [Sun Sep 15 22:44:04 2019] GET /sma/ => generated 671 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+[pid: 20665|app: 0|req: 8/25] 127.0.0.1 () {50 vars in 1283 bytes} [Sun Sep 15 22:44:05 2019] GET /sma/list/ => generated 506 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+[pid: 20664|app: 0|req: 5/26] 127.0.0.1 () {50 vars in 1278 bytes} [Sun Sep 15 22:44:06 2019] GET /sma/ => generated 671 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+[pid: 20664|app: 0|req: 6/27] 127.0.0.1 () {50 vars in 1287 bytes} [Sun Sep 15 22:44:08 2019] GET /sma/create/ => generated 1989 bytes in 27 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+/home/seungyong/zipline/lib/python3.5/site-packages/empyrical/stats.py:704: RuntimeWarning: invalid value encountered in true_divide
+  out=out,
+/home/seungyong/zipline/lib/python3.5/site-packages/empyrical/stats.py:790: RuntimeWarning: invalid value encountered in true_divide
+  np.divide(average_annual_return, annualized_downside_risk, out=out)
+[pid: 20665|app: 0|req: 9/28] 127.0.0.1 () {58 vars in 1473 bytes} [Sun Sep 15 22:44:31 2019] POST /sma/create/ => generated 0 bytes in 15008 msecs (HTTP/1.1 302) 4 headers in 134 bytes (1 switches on core 0)
+[pid: 20665|app: 0|req: 10/29] 127.0.0.1 () {52 vars in 1325 bytes} [Sun Sep 15 22:44:46 2019] GET /sma/list/1/ => generated 1255 bytes in 5 msecs (HTTP/1.1 200) 3 headers in 110 bytes (2 switches on core 0)
+[pid: 20665|app: 0|req: 11/30] 127.0.0.1 () {48 vars in 1255 bytes} [Sun Sep 15 22:45:01 2019] GET /sma/create/ => generated 1989 bytes in 17 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 20665|app: 0|req: 12/31] 127.0.0.1 () {58 vars in 1473 bytes} [Sun Sep 15 22:45:08 2019] POST /sma/create/ => generated 0 bytes in 4122 msecs (HTTP/1.1 302) 4 headers in 134 bytes (1 switches on core 0)
+[pid: 20663|app: 0|req: 5/32] 127.0.0.1 () {52 vars in 1325 bytes} [Sun Sep 15 22:45:12 2019] GET /sma/list/2/ => generated 1273 bytes in 9 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 20665|app: 0|req: 13/33] 127.0.0.1 () {50 vars in 1280 bytes} [Sun Sep 15 22:45:18 2019] GET /sma/ => generated 671 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+[pid: 20666|app: 0|req: 9/34] 127.0.0.1 () {50 vars in 1283 bytes} [Sun Sep 15 22:45:19 2019] GET /sma/list/ => generated 896 bytes in 11 msecs (HTTP/1.1 200) 3 headers in 109 bytes (2 switches on core 0)
+[pid: 20665|app: 0|req: 14/35] 127.0.0.1 () {50 vars in 1296 bytes} [Sun Sep 15 22:45:21 2019] GET /sma/delete/1/ => generated 788 bytes in 6 msecs (HTTP/1.1 200) 5 headers in 291 bytes (1 switches on core 0)
+[pid: 20666|app: 0|req: 10/36] 127.0.0.1 () {58 vars in 1477 bytes} [Sun Sep 15 22:45:23 2019] POST /sma/delete/1/ => generated 0 bytes in 23 msecs (HTTP/1.1 302) 4 headers in 132 bytes (1 switches on core 0)
+[pid: 20666|app: 0|req: 11/37] 127.0.0.1 () {52 vars in 1323 bytes} [Sun Sep 15 22:45:23 2019] GET /sma/list/ => generated 703 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 109 bytes (2 switches on core 0)
+[pid: 20663|app: 0|req: 6/38] 127.0.0.1 () {50 vars in 1270 bytes} [Sun Sep 15 22:45:24 2019] GET / => generated 602 bytes in 8 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+[pid: 20662|app: 0|req: 2/39] 127.0.0.1 () {50 vars in 1261 bytes} [Sun Sep 15 22:45:24 2019] GET / => generated 602 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+[pid: 20666|app: 0|req: 12/40] 127.0.0.1 () {50 vars in 1269 bytes} [Sun Sep 15 22:45:26 2019] GET /bah/ => generated 635 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 109 bytes (2 switches on core 0)
+[pid: 20665|app: 0|req: 15/41] 127.0.0.1 () {50 vars in 1283 bytes} [Sun Sep 15 22:45:27 2019] GET /bah/list/ => generated 479 bytes in 8 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+[pid: 20666|app: 0|req: 13/42] 127.0.0.1 () {50 vars in 1278 bytes} [Sun Sep 15 22:45:28 2019] GET /bah/ => generated 635 bytes in 2 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+[pid: 20665|app: 0|req: 16/43] 127.0.0.1 () {50 vars in 1287 bytes} [Sun Sep 15 22:45:29 2019] GET /bah/create/ => generated 2093 bytes in 15 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 20665|app: 0|req: 17/44] 127.0.0.1 () {58 vars in 1473 bytes} [Sun Sep 15 22:46:11 2019] POST /bah/create/ => generated 27 bytes in 1016 msecs (HTTP/1.1 500) 4 headers in 197 bytes (2 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+*** Starting uWSGI 2.0.18 (64bit) on [Sun Sep 15 22:47:20 2019] ***
+compiled with version: 7.4.0 on 07 September 2019 06:02:45
+os: Linux-4.15.0-60-generic #67-Ubuntu SMP Thu Aug 22 16:55:30 UTC 2019
+nodename: POWERFUL-K55VM
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /home/seungyong/FindMore/console
+writing pidfile to /tmp/findmore_uwsgi.pid
+detected binary path: /home/seungyong/zipline/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/seungyong/FindMore
+your processes number limit is 62753
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/seungyong/FindMore/FindMore/findmore_uwsgi.sock fd 3
+Python version: 3.5.7 (default, Mar 30 2019, 01:05:18)  [GCC 7.3.0]
+PEP 405 virtualenv detected: /home/seungyong/zipline
+Set PythonHome to /home/seungyong/zipline
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x5555c8fa26a0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 437424 bytes (427 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x5555c8fa26a0 pid: 21073 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 21073)
+spawned uWSGI worker 1 (pid: 21075, cores: 1)
+spawned uWSGI worker 2 (pid: 21076, cores: 1)
+spawned uWSGI worker 3 (pid: 21077, cores: 1)
+spawned uWSGI worker 4 (pid: 21078, cores: 1)
+spawned uWSGI worker 5 (pid: 21079, cores: 1)
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+VACUUM WARNING: unix socket /home/seungyong/FindMore/FindMore/findmore_uwsgi.sock changed inode. Skip removal
+[pid: 21079|app: 0|req: 1/1] 127.0.0.1 () {48 vars in 1211 bytes} [Sun Sep 15 22:47:27 2019] GET /bah/create/ => generated 2093 bytes in 1743 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+Internal Server Error: /bah/create/
+Traceback (most recent call last):
+  File "/home/seungyong/zipline/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/seungyong/zipline/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/seungyong/zipline/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/seungyong/zipline/lib/python3.5/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/seungyong/zipline/lib/python3.5/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/seungyong/zipline/lib/python3.5/site-packages/django/views/generic/edit.py", line 172, in post
+    return super().post(request, *args, **kwargs)
+  File "/home/seungyong/zipline/lib/python3.5/site-packages/django/views/generic/edit.py", line 142, in post
+    return self.form_valid(form)
+  File "./bah/views.py", line 101, in form_valid
+    bt_file_name = name+'_'+str(quantity)+'-'+str(period)+'_'+str(start_date)+'-'+str(end_date)+'_BAH-BT.png'
+NameError: name 'quantity' is not defined
+[pid: 21079|app: 0|req: 2/2] 127.0.0.1 () {58 vars in 1429 bytes} [Sun Sep 15 22:47:31 2019] POST /bah/create/ => generated 99098 bytes in 2005 msecs (HTTP/1.1 500) 4 headers in 129 bytes (1 switches on core 0)
+Internal Server Error: /bah/create/
+Traceback (most recent call last):
+  File "/home/seungyong/zipline/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/seungyong/zipline/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/seungyong/zipline/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/seungyong/zipline/lib/python3.5/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/seungyong/zipline/lib/python3.5/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/seungyong/zipline/lib/python3.5/site-packages/django/views/generic/edit.py", line 172, in post
+    return super().post(request, *args, **kwargs)
+  File "/home/seungyong/zipline/lib/python3.5/site-packages/django/views/generic/edit.py", line 142, in post
+    return self.form_valid(form)
+  File "./bah/views.py", line 101, in form_valid
+    bt_file_name = name+'_'+str(buy_quantity)+'-'+str(period)+'_'+str(start_date)+'-'+str(end_date)+'_BAH-BT.png'
+NameError: name 'period' is not defined
+[pid: 21078|app: 0|req: 1/3] 127.0.0.1 () {58 vars in 1429 bytes} [Sun Sep 15 22:48:22 2019] POST /bah/create/ => generated 99102 bytes in 3601 msecs (HTTP/1.1 500) 4 headers in 129 bytes (1 switches on core 0)
+Internal Server Error: /bah/create/
+Traceback (most recent call last):
+  File "/home/seungyong/zipline/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/seungyong/zipline/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/seungyong/zipline/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/seungyong/zipline/lib/python3.5/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/seungyong/zipline/lib/python3.5/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/seungyong/zipline/lib/python3.5/site-packages/django/views/generic/edit.py", line 172, in post
+    return super().post(request, *args, **kwargs)
+  File "/home/seungyong/zipline/lib/python3.5/site-packages/django/views/generic/edit.py", line 142, in post
+    return self.form_valid(form)
+  File "./bah/views.py", line 101, in form_valid
+    bt_file_name = name+'_'+str(buy_quantity)+'-'+str(buy_period)+'_'+str(start_date)+'-'+str(end_date)+'_BAH-BT.png'
+NameError: name 'quantity' is not defined
+[pid: 21079|app: 0|req: 3/4] 127.0.0.1 () {58 vars in 1429 bytes} [Sun Sep 15 22:49:12 2019] POST /bah/create/ => generated 99122 bytes in 1175 msecs (HTTP/1.1 500) 4 headers in 129 bytes (2 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Sun Sep 15 22:49:44 2019] ***
+compiled with version: 7.4.0 on 07 September 2019 06:02:45
+os: Linux-4.15.0-60-generic #67-Ubuntu SMP Thu Aug 22 16:55:30 UTC 2019
+nodename: POWERFUL-K55VM
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /home/seungyong/FindMore/bah
+writing pidfile to /tmp/findmore_uwsgi.pid
+detected binary path: /home/seungyong/zipline/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/seungyong/FindMore
+your processes number limit is 62753
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/seungyong/FindMore/FindMore/findmore_uwsgi.sock fd 3
+Python version: 3.5.7 (default, Mar 30 2019, 01:05:18)  [GCC 7.3.0]
+PEP 405 virtualenv detected: /home/seungyong/zipline
+Set PythonHome to /home/seungyong/zipline
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x561693ed8690
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 437424 bytes (427 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x561693ed8690 pid: 21228 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 21228)
+spawned uWSGI worker 1 (pid: 21231, cores: 1)
+spawned uWSGI worker 2 (pid: 21232, cores: 1)
+spawned uWSGI worker 3 (pid: 21233, cores: 1)
+spawned uWSGI worker 4 (pid: 21234, cores: 1)
+spawned uWSGI worker 5 (pid: 21235, cores: 1)
+[pid: 21232|app: 0|req: 1/1] 127.0.0.1 () {58 vars in 1429 bytes} [Sun Sep 15 22:49:48 2019] POST /bah/create/ => generated 0 bytes in 4061 msecs (HTTP/1.1 302) 4 headers in 134 bytes (1 switches on core 0)
+[pid: 21234|app: 0|req: 1/2] 127.0.0.1 () {52 vars in 1281 bytes} [Sun Sep 15 22:49:53 2019] GET /bah/list/1/ => generated 1342 bytes in 1683 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 21235|app: 0|req: 1/3] 127.0.0.1 () {48 vars in 1211 bytes} [Sun Sep 15 22:52:24 2019] GET /bah/create/ => generated 2093 bytes in 1683 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+Internal Server Error: /bah/create/
+Traceback (most recent call last):
+  File "/home/seungyong/zipline/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/seungyong/zipline/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/seungyong/zipline/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/seungyong/zipline/lib/python3.5/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/seungyong/zipline/lib/python3.5/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/seungyong/zipline/lib/python3.5/site-packages/django/views/generic/edit.py", line 172, in post
+    return super().post(request, *args, **kwargs)
+  File "/home/seungyong/zipline/lib/python3.5/site-packages/django/views/generic/edit.py", line 142, in post
+    return self.form_valid(form)
+  File "./bah/views.py", line 84, in form_valid
+    df = fdr.DataReader(code, start_date, end_date)
+  File "/home/seungyong/zipline/lib/python3.5/site-packages/FinanceDataReader/data.py", line 12, in DataReader
+    return reader(symbol=symbol, start=start, end=end, country=country).read()
+  File "/home/seungyong/zipline/lib/python3.5/site-packages/FinanceDataReader/investing/data.py", line 52, in read
+    raise ValueError("Symbol unsupported or not found")
+ValueError: Symbol unsupported or not found
+[pid: 21233|app: 0|req: 1/4] 127.0.0.1 () {58 vars in 1429 bytes} [Sun Sep 15 22:54:19 2019] POST /bah/create/ => generated 92387 bytes in 3045 msecs (HTTP/1.1 500) 4 headers in 129 bytes (1 switches on core 0)
+Internal Server Error: /bah/create/
+Traceback (most recent call last):
+  File "/home/seungyong/zipline/lib/python3.5/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/seungyong/zipline/lib/python3.5/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/seungyong/zipline/lib/python3.5/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/seungyong/zipline/lib/python3.5/site-packages/django/views/generic/base.py", line 71, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/seungyong/zipline/lib/python3.5/site-packages/django/views/generic/base.py", line 97, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/seungyong/zipline/lib/python3.5/site-packages/django/views/generic/edit.py", line 172, in post
+    return super().post(request, *args, **kwargs)
+  File "/home/seungyong/zipline/lib/python3.5/site-packages/django/views/generic/edit.py", line 142, in post
+    return self.form_valid(form)
+  File "./bah/views.py", line 84, in form_valid
+    df = fdr.DataReader(code, start_date, end_date)
+  File "/home/seungyong/zipline/lib/python3.5/site-packages/FinanceDataReader/data.py", line 12, in DataReader
+    return reader(symbol=symbol, start=start, end=end, country=country).read()
+  File "/home/seungyong/zipline/lib/python3.5/site-packages/FinanceDataReader/investing/data.py", line 52, in read
+    raise ValueError("Symbol unsupported or not found")
+ValueError: Symbol unsupported or not found
+[pid: 21235|app: 0|req: 2/5] 127.0.0.1 () {58 vars in 1429 bytes} [Sun Sep 15 22:55:58 2019] POST /bah/create/ => generated 92387 bytes in 1328 msecs (HTTP/1.1 500) 4 headers in 129 bytes (2 switches on core 0)
+[pid: 21234|app: 0|req: 2/6] 127.0.0.1 () {58 vars in 1429 bytes} [Sun Sep 15 22:56:16 2019] POST /bah/create/ => generated 0 bytes in 2493 msecs (HTTP/1.1 302) 4 headers in 134 bytes (1 switches on core 0)
+[pid: 21234|app: 0|req: 3/7] 127.0.0.1 () {52 vars in 1281 bytes} [Sun Sep 15 22:56:19 2019] GET /bah/list/2/ => generated 1323 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 110 bytes (2 switches on core 0)
+[pid: 21235|app: 0|req: 3/8] 127.0.0.1 () {50 vars in 1236 bytes} [Sun Sep 15 22:58:50 2019] GET /bah/ => generated 635 bytes in 15 msecs (HTTP/1.1 200) 3 headers in 109 bytes (2 switches on core 0)
+[pid: 21235|app: 0|req: 4/9] 127.0.0.1 () {50 vars in 1239 bytes} [Sun Sep 15 22:58:51 2019] GET /bah/list/ => generated 869 bytes in 14 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+[pid: 21235|app: 0|req: 5/10] 127.0.0.1 () {50 vars in 1252 bytes} [Sun Sep 15 22:58:55 2019] GET /bah/delete/2/ => generated 761 bytes in 11 msecs (HTTP/1.1 200) 5 headers in 291 bytes (1 switches on core 0)
+[pid: 21235|app: 0|req: 6/11] 127.0.0.1 () {58 vars in 1433 bytes} [Sun Sep 15 22:58:56 2019] POST /bah/delete/2/ => generated 0 bytes in 18 msecs (HTTP/1.1 302) 4 headers in 132 bytes (1 switches on core 0)
+[pid: 21235|app: 0|req: 7/12] 127.0.0.1 () {52 vars in 1279 bytes} [Sun Sep 15 22:58:56 2019] GET /bah/list/ => generated 676 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+[pid: 21233|app: 0|req: 2/13] 127.0.0.1 () {50 vars in 1226 bytes} [Sun Sep 15 22:58:58 2019] GET / => generated 602 bytes in 28 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+[pid: 21233|app: 0|req: 3/14] 127.0.0.1 () {50 vars in 1229 bytes} [Sun Sep 15 22:58:59 2019] GET /admin/ => generated 0 bytes in 19 msecs (HTTP/1.1 302) 7 headers in 265 bytes (1 switches on core 0)
+[pid: 21231|app: 0|req: 1/15] 127.0.0.1 () {50 vars in 1266 bytes} [Sun Sep 15 22:58:59 2019] GET /admin/login/?next=/admin/ => generated 1823 bytes in 1728 msecs (HTTP/1.1 200) 7 headers in 395 bytes (1 switches on core 0)
+[pid: 21233|app: 0|req: 4/16] 127.0.0.1 () {58 vars in 1470 bytes} [Sun Sep 15 22:59:07 2019] POST /admin/login/?next=/admin/ => generated 0 bytes in 130 msecs (HTTP/1.1 302) 9 headers in 559 bytes (1 switches on core 0)
+[pid: 21234|app: 0|req: 4/17] 127.0.0.1 () {52 vars in 1329 bytes} [Sun Sep 15 22:59:07 2019] GET /admin/ => generated 5145 bytes in 34 msecs (HTTP/1.1 200) 6 headers in 227 bytes (1 switches on core 0)
+[pid: 21232|app: 0|req: 2/18] 127.0.0.1 () {50 vars in 1305 bytes} [Sun Sep 15 22:59:09 2019] GET /admin/bah/bah_list/ => generated 4417 bytes in 76 msecs (HTTP/1.1 200) 7 headers in 395 bytes (1 switches on core 0)
+[pid: 21235|app: 0|req: 8/19] 127.0.0.1 () {46 vars in 1130 bytes} [Sun Sep 15 22:59:09 2019] GET /admin/jsi18n/ => generated 3223 bytes in 10 msecs (HTTP/1.1 200) 4 headers in 132 bytes (1 switches on core 0)
+[pid: 21233|app: 0|req: 5/20] 127.0.0.1 () {50 vars in 1336 bytes} [Sun Sep 15 22:59:11 2019] GET /admin/bah/bah_list/1/change/ => generated 14439 bytes in 99 msecs (HTTP/1.1 200) 7 headers in 396 bytes (1 switches on core 0)
+[pid: 21235|app: 0|req: 9/21] 127.0.0.1 () {46 vars in 1139 bytes} [Sun Sep 15 22:59:11 2019] GET /admin/jsi18n/ => generated 3223 bytes in 7 msecs (HTTP/1.1 200) 4 headers in 132 bytes (1 switches on core 0)
+[pid: 21231|app: 0|req: 2/22] 127.0.0.1 () {48 vars in 1273 bytes} [Sun Sep 15 22:59:25 2019] GET /admin/bah/bah_list/ => generated 4417 bytes in 53 msecs (HTTP/1.1 200) 7 headers in 395 bytes (2 switches on core 0)
+[pid: 21233|app: 0|req: 6/23] 127.0.0.1 () {48 vars in 1266 bytes} [Sun Sep 15 22:59:27 2019] GET /admin/ => generated 5145 bytes in 24 msecs (HTTP/1.1 200) 6 headers in 227 bytes (1 switches on core 0)
+[pid: 21233|app: 0|req: 7/24] 127.0.0.1 () {50 vars in 1305 bytes} [Sun Sep 15 22:59:30 2019] GET /admin/mra/mra_list/ => generated 4694 bytes in 50 msecs (HTTP/1.1 200) 7 headers in 395 bytes (1 switches on core 0)
+[pid: 21235|app: 0|req: 10/25] 127.0.0.1 () {46 vars in 1130 bytes} [Sun Sep 15 22:59:30 2019] GET /admin/jsi18n/ => generated 3223 bytes in 6 msecs (HTTP/1.1 200) 4 headers in 132 bytes (1 switches on core 0)
+[pid: 21232|app: 0|req: 3/26] 127.0.0.1 () {50 vars in 1336 bytes} [Sun Sep 15 22:59:32 2019] GET /admin/mra/mra_list/2/change/ => generated 12989 bytes in 81 msecs (HTTP/1.1 200) 7 headers in 396 bytes (1 switches on core 0)
+[pid: 21235|app: 0|req: 11/27] 127.0.0.1 () {46 vars in 1139 bytes} [Sun Sep 15 22:59:32 2019] GET /admin/jsi18n/ => generated 3223 bytes in 7 msecs (HTTP/1.1 200) 4 headers in 132 bytes (2 switches on core 0)
+[pid: 21235|app: 0|req: 12/28] 127.0.0.1 () {50 vars in 1301 bytes} [Sun Sep 15 22:59:35 2019] GET /admin/ => generated 5145 bytes in 37 msecs (HTTP/1.1 200) 6 headers in 227 bytes (2 switches on core 0)
+[pid: 21235|app: 0|req: 13/29] 127.0.0.1 () {50 vars in 1245 bytes} [Sun Sep 15 22:59:37 2019] GET / => generated 602 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 109 bytes (2 switches on core 0)
+[pid: 21235|app: 0|req: 14/30] 127.0.0.1 () {50 vars in 1269 bytes} [Sun Sep 15 23:04:07 2019] GET /mra/ => generated 663 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+[pid: 21233|app: 0|req: 8/31] 127.0.0.1 () {50 vars in 1283 bytes} [Sun Sep 15 23:04:08 2019] GET /mra/list/ => generated 902 bytes in 16 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+[pid: 21235|app: 0|req: 15/32] 127.0.0.1 () {50 vars in 1273 bytes} [Sun Sep 15 23:04:13 2019] GET /mra/ => generated 663 bytes in 8 msecs (HTTP/1.1 200) 3 headers in 109 bytes (2 switches on core 0)
+[pid: 21235|app: 0|req: 16/33] 127.0.0.1 () {50 vars in 1287 bytes} [Sun Sep 15 23:04:14 2019] GET /mra/create/ => generated 1376 bytes in 20 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 21235|app: 0|req: 17/34] 127.0.0.1 () {58 vars in 1473 bytes} [Sun Sep 15 23:04:22 2019] POST /mra/create/ => generated 0 bytes in 988 msecs (HTTP/1.1 302) 4 headers in 134 bytes (1 switches on core 0)
+[pid: 21232|app: 0|req: 4/35] 127.0.0.1 () {52 vars in 1325 bytes} [Sun Sep 15 23:04:23 2019] GET /mra/list/4/ => generated 1103 bytes in 8 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+*** Starting uWSGI 2.0.18 (64bit) on [Sun Sep 15 23:05:02 2019] ***
+compiled with version: 7.4.0 on 07 September 2019 06:02:45
+os: Linux-4.15.0-60-generic #67-Ubuntu SMP Thu Aug 22 16:55:30 UTC 2019
+nodename: POWERFUL-K55VM
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /home/seungyong/FindMore/static
+writing pidfile to /tmp/findmore_uwsgi.pid
+detected binary path: /home/seungyong/zipline/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/seungyong/FindMore
+your processes number limit is 62753
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/seungyong/FindMore/FindMore/findmore_uwsgi.sock fd 3
+Python version: 3.5.7 (default, Mar 30 2019, 01:05:18)  [GCC 7.3.0]
+PEP 405 virtualenv detected: /home/seungyong/zipline
+Set PythonHome to /home/seungyong/zipline
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x56000a12d690
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 437424 bytes (427 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x56000a12d690 pid: 23411 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 23411)
+spawned uWSGI worker 1 (pid: 23415, cores: 1)
+spawned uWSGI worker 2 (pid: 23416, cores: 1)
+spawned uWSGI worker 3 (pid: 23417, cores: 1)
+spawned uWSGI worker 4 (pid: 23418, cores: 1)
+spawned uWSGI worker 5 (pid: 23419, cores: 1)
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+VACUUM WARNING: unix socket /home/seungyong/FindMore/FindMore/findmore_uwsgi.sock changed inode. Skip removal
+Sun Sep 15 23:05:09 2019 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 306] during GET / (127.0.0.1)
+OSError: write error
+[pid: 23418|app: 0|req: 1/1] 127.0.0.1 () {50 vars in 1272 bytes} [Sun Sep 15 23:05:07 2019] GET / => generated 0 bytes in 1774 msecs (HTTP/1.1 200) 3 headers in 0 bytes (0 switches on core 0)
+[pid: 23416|app: 0|req: 1/2] 127.0.0.1 () {50 vars in 1272 bytes} [Sun Sep 15 23:05:07 2019] GET / => generated 602 bytes in 1720 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+[pid: 23417|app: 0|req: 1/3] 127.0.0.1 () {50 vars in 1269 bytes} [Sun Sep 15 23:05:11 2019] GET /mra/ => generated 663 bytes in 1724 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+[pid: 23416|app: 0|req: 2/4] 127.0.0.1 () {50 vars in 1287 bytes} [Sun Sep 15 23:05:13 2019] GET /mra/create/ => generated 1376 bytes in 28 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 23416|app: 0|req: 3/5] 127.0.0.1 () {58 vars in 1473 bytes} [Sun Sep 15 23:05:19 2019] POST /mra/create/ => generated 0 bytes in 870 msecs (HTTP/1.1 302) 4 headers in 134 bytes (2 switches on core 0)
+[pid: 23417|app: 0|req: 2/6] 127.0.0.1 () {52 vars in 1325 bytes} [Sun Sep 15 23:05:20 2019] GET /mra/list/5/ => generated 1107 bytes in 16 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Sun Sep 15 23:10:52 2019] ***
+compiled with version: 7.4.0 on 07 September 2019 06:02:45
+os: Linux-4.15.0-60-generic #67-Ubuntu SMP Thu Aug 22 16:55:30 UTC 2019
+nodename: POWERFUL-K55VM
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /home/seungyong/FindMore/sma
+writing pidfile to /tmp/findmore_uwsgi.pid
+detected binary path: /home/seungyong/zipline/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/seungyong/FindMore
+your processes number limit is 62753
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/seungyong/FindMore/FindMore/findmore_uwsgi.sock fd 3
+Python version: 3.5.7 (default, Mar 30 2019, 01:05:18)  [GCC 7.3.0]
+PEP 405 virtualenv detected: /home/seungyong/zipline
+Set PythonHome to /home/seungyong/zipline
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x5590f44cb690
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 437424 bytes (427 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x5590f44cb690 pid: 23708 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 23708)
+spawned uWSGI worker 1 (pid: 23711, cores: 1)
+spawned uWSGI worker 2 (pid: 23712, cores: 1)
+spawned uWSGI worker 3 (pid: 23713, cores: 1)
+spawned uWSGI worker 4 (pid: 23714, cores: 1)
+spawned uWSGI worker 5 (pid: 23715, cores: 1)
+[pid: 23715|app: 0|req: 1/1] 127.0.0.1 () {50 vars in 1272 bytes} [Sun Sep 15 23:10:58 2019] GET / => generated 602 bytes in 1723 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+[pid: 23712|app: 0|req: 1/2] 127.0.0.1 () {50 vars in 1269 bytes} [Sun Sep 15 23:11:02 2019] GET /mra/ => generated 663 bytes in 1715 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+[pid: 23715|app: 0|req: 2/3] 127.0.0.1 () {50 vars in 1283 bytes} [Sun Sep 15 23:12:01 2019] GET /mra/list/ => generated 1296 bytes in 21 msecs (HTTP/1.1 200) 3 headers in 110 bytes (2 switches on core 0)
+[pid: 23714|app: 0|req: 1/4] 127.0.0.1 () {50 vars in 1292 bytes} [Sun Sep 15 23:12:02 2019] GET /mra/list/5/ => generated 1107 bytes in 1694 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 23714|app: 0|req: 2/5] 127.0.0.1 () {50 vars in 1296 bytes} [Sun Sep 15 23:12:07 2019] GET /mra/delete/5/ => generated 798 bytes in 15 msecs (HTTP/1.1 200) 5 headers in 291 bytes (1 switches on core 0)
+[pid: 23713|app: 0|req: 1/6] 127.0.0.1 () {58 vars in 1477 bytes} [Sun Sep 15 23:12:12 2019] POST /mra/delete/5/ => generated 0 bytes in 1718 msecs (HTTP/1.1 302) 4 headers in 132 bytes (1 switches on core 0)
+[pid: 23715|app: 0|req: 3/7] 127.0.0.1 () {52 vars in 1323 bytes} [Sun Sep 15 23:12:14 2019] GET /mra/list/ => generated 1099 bytes in 10 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 23715|app: 0|req: 4/8] 127.0.0.1 () {50 vars in 1278 bytes} [Sun Sep 15 23:12:54 2019] GET /mra/ => generated 663 bytes in 3 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+[pid: 23715|app: 0|req: 5/9] 127.0.0.1 () {50 vars in 1287 bytes} [Sun Sep 15 23:12:55 2019] GET /mra/create/ => generated 1376 bytes in 24 msecs (HTTP/1.1 200) 5 headers in 292 bytes (2 switches on core 0)
+[pid: 23715|app: 0|req: 6/10] 127.0.0.1 () {58 vars in 1473 bytes} [Sun Sep 15 23:13:04 2019] POST /mra/create/ => generated 0 bytes in 897 msecs (HTTP/1.1 302) 4 headers in 134 bytes (2 switches on core 0)
+[pid: 23713|app: 0|req: 2/11] 127.0.0.1 () {52 vars in 1325 bytes} [Sun Sep 15 23:13:05 2019] GET /mra/list/6/ => generated 1108 bytes in 21 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 23713|app: 0|req: 3/12] 127.0.0.1 () {50 vars in 1280 bytes} [Sun Sep 15 23:13:30 2019] GET /mra/ => generated 663 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+[pid: 23711|app: 0|req: 1/13] 127.0.0.1 () {50 vars in 1265 bytes} [Sun Sep 15 23:13:31 2019] GET / => generated 602 bytes in 1769 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+[pid: 23715|app: 0|req: 7/14] 127.0.0.1 () {50 vars in 1269 bytes} [Sun Sep 15 23:13:36 2019] GET /sma/ => generated 671 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 109 bytes (2 switches on core 0)
+[pid: 23713|app: 0|req: 4/15] 127.0.0.1 () {50 vars in 1283 bytes} [Sun Sep 15 23:13:37 2019] GET /sma/list/ => generated 703 bytes in 14 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+[pid: 23715|app: 0|req: 8/16] 127.0.0.1 () {50 vars in 1278 bytes} [Sun Sep 15 23:13:38 2019] GET /sma/ => generated 671 bytes in 3 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+[pid: 23715|app: 0|req: 9/17] 127.0.0.1 () {50 vars in 1287 bytes} [Sun Sep 15 23:13:38 2019] GET /sma/create/ => generated 1989 bytes in 30 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+/home/seungyong/zipline/lib/python3.5/site-packages/empyrical/stats.py:704: RuntimeWarning: invalid value encountered in true_divide
+  out=out,
+/home/seungyong/zipline/lib/python3.5/site-packages/empyrical/stats.py:790: RuntimeWarning: invalid value encountered in true_divide
+  np.divide(average_annual_return, annualized_downside_risk, out=out)
+[pid: 23714|app: 0|req: 3/18] 127.0.0.1 () {58 vars in 1473 bytes} [Sun Sep 15 23:14:00 2019] POST /sma/create/ => generated 0 bytes in 5059 msecs (HTTP/1.1 302) 4 headers in 134 bytes (2 switches on core 0)
+[pid: 23714|app: 0|req: 4/19] 127.0.0.1 () {52 vars in 1325 bytes} [Sun Sep 15 23:14:05 2019] GET /sma/list/3/ => generated 1255 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 110 bytes (2 switches on core 0)
+[pid: 23715|app: 0|req: 10/20] 127.0.0.1 () {48 vars in 1255 bytes} [Sun Sep 15 23:15:35 2019] GET /sma/create/ => generated 1989 bytes in 25 msecs (HTTP/1.1 200) 5 headers in 292 bytes (2 switches on core 0)
+[pid: 23715|app: 0|req: 11/21] 127.0.0.1 () {50 vars in 1272 bytes} [Sun Sep 15 23:15:36 2019] GET / => generated 602 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+[pid: 23715|app: 0|req: 12/22] 127.0.0.1 () {50 vars in 1269 bytes} [Sun Sep 15 23:15:42 2019] GET /bah/ => generated 635 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 109 bytes (2 switches on core 0)
+[pid: 23714|app: 0|req: 5/23] 127.0.0.1 () {50 vars in 1283 bytes} [Sun Sep 15 23:15:43 2019] GET /bah/list/ => generated 676 bytes in 15 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+[pid: 23713|app: 0|req: 5/24] 127.0.0.1 () {50 vars in 1278 bytes} [Sun Sep 15 23:15:44 2019] GET /bah/ => generated 635 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+[pid: 23715|app: 0|req: 13/25] 127.0.0.1 () {50 vars in 1287 bytes} [Sun Sep 15 23:15:45 2019] GET /bah/create/ => generated 2093 bytes in 33 msecs (HTTP/1.1 200) 5 headers in 292 bytes (1 switches on core 0)
+[pid: 23714|app: 0|req: 6/26] 127.0.0.1 () {58 vars in 1473 bytes} [Sun Sep 15 23:16:04 2019] POST /bah/create/ => generated 0 bytes in 2518 msecs (HTTP/1.1 302) 4 headers in 134 bytes (2 switches on core 0)
+[pid: 23714|app: 0|req: 7/27] 127.0.0.1 () {52 vars in 1325 bytes} [Sun Sep 15 23:16:06 2019] GET /bah/list/3/ => generated 1344 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 110 bytes (1 switches on core 0)
+[pid: 23714|app: 0|req: 8/28] 127.0.0.1 () {50 vars in 1272 bytes} [Sun Sep 15 23:19:57 2019] GET / => generated 602 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+[pid: 23714|app: 0|req: 9/29] 127.0.0.1 () {50 vars in 1273 bytes} [Sun Sep 15 23:19:59 2019] GET /admin/ => generated 5145 bytes in 38 msecs (HTTP/1.1 200) 6 headers in 227 bytes (1 switches on core 0)
+[pid: 23715|app: 0|req: 14/30] 127.0.0.1 () {50 vars in 1261 bytes} [Sun Sep 15 23:20:02 2019] GET / => generated 602 bytes in 5 msecs (HTTP/1.1 200) 3 headers in 109 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+goodbye to uWSGI.
+VACUUM: pidfile removed.
+VACUUM: unix socket /home/seungyong/FindMore/FindMore/findmore_uwsgi.sock removed.
+DAMN ! worker 1 (pid: 23415) died, killed by signal 9 :( trying respawn ...
+Respawned uWSGI worker 1 (new pid: 25882)
+Sun Sep 15 23:22:17 2019 - uWSGI worker 3 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sun Sep 15 23:22:17 2019 - uWSGI worker 4 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sun Sep 15 23:22:17 2019 - uWSGI worker 2 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sun Sep 15 23:22:17 2019 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+Sun Sep 15 23:22:17 2019 - uWSGI worker 5 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+...brutally killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+worker 5 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /home/seungyong/FindMore/console
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 3 mapped to socket 0 (/home/seungyong/FindMore/FindMore/findmore_uwsgi.sock)
+running /home/seungyong/zipline/bin/uwsgi
+[uWSGI] getting INI configuration from /home/seungyong/FindMore/FindMore/findmore_uwsgi.ini
+*** Starting uWSGI 2.0.18 (64bit) on [Sun Sep 15 23:22:35 2019] ***
+compiled with version: 7.4.0 on 07 September 2019 06:02:45
+os: Linux-4.15.0-60-generic #67-Ubuntu SMP Thu Aug 22 16:55:30 UTC 2019
+nodename: POWERFUL-K55VM
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /home/seungyong/FindMore/console
+detected binary path: /home/seungyong/zipline/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/seungyong/FindMore
+your processes number limit is 62753
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited UNIX address /home/seungyong/FindMore/FindMore/findmore_uwsgi.sock fd 3
+Python version: 3.5.7 (default, Mar 30 2019, 01:05:18)  [GCC 7.3.0]
+PEP 405 virtualenv detected: /home/seungyong/zipline
+Set PythonHome to /home/seungyong/zipline
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x55b7c8f9d320
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 437424 bytes (427 KB) for 5 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55b7c8f9d320 pid: 21073 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 21073)
+spawned uWSGI worker 1 (pid: 25888, cores: 1)
+spawned uWSGI worker 2 (pid: 25889, cores: 1)
+spawned uWSGI worker 3 (pid: 25890, cores: 1)
+spawned uWSGI worker 4 (pid: 25891, cores: 1)
+spawned uWSGI worker 5 (pid: 25892, cores: 1)
+DAMN ! worker 1 (pid: 25888) died, killed by signal 9 :( trying respawn ...
+Respawned uWSGI worker 1 (new pid: 25911)
+DAMN ! worker 2 (pid: 25889) died, killed by signal 9 :( trying respawn ...
+Respawned uWSGI worker 2 (new pid: 25915)
+DAMN ! worker 3 (pid: 25890) died, killed by signal 9 :( trying respawn ...
+Respawned uWSGI worker 3 (new pid: 26192)

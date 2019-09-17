@@ -1,0 +1,13 @@
+{% extends "base_bah.html" %}
+
+{% block content %}
+<p>Buy And Hold Create</p>
+
+<form action="" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Backtest">
+</form>
+
+{% endblock content %}
+~                      

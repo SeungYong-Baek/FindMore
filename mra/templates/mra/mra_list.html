@@ -1,0 +1,13 @@
+{% extends "base_mra.html" %}
+
+{% block content %}
+    <p>Mean Reversion Analysis List</p>
+    <ul>
+        {% for object in object_list %}
+	    <li><a href="{% url 'mra:mra_list_detail' object.id %}">
+	    {{ object.name }} / {{ object.created }} / {{ object.start_date }} ~ {{ object.end_date }}</a> |
+	    <a href="{% url 'mra:mra_list_delete' pk=object.id %}"><font color="red"> Delete </font></a></li>
+        {% endfor %}
+    </ul>
+{% endblock content %}
+

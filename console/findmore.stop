@@ -1,0 +1,3 @@
+source /home/seungyong/zipline/bin/activate
+sudo systemctl stop nginx
+uwsgi --stop /tmp/findmore_uwsgi.pid 

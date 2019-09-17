@@ -1,0 +1,30 @@
+{% extends "base_bah.html" %}
+
+{% block content %}
+    <p>Buy And Hold Detail</p>
+    <p>{{ object.name }}</p>
+    <ul>
+        <li>Created Date: {{ object.created }}</li>
+        <li>Start Date: {{ object.start_date }}</li>
+        <li>End Date: {{ object.end_date }}</li>
+        <li>Buy Quantity: {{ object.buy_quantity }}</li>
+        <li>Buy Period: {{ object.buy_period }}</li>
+        <li>Capital Base: {{ object.capital_base }}</li>
+        <li>Holding Shares: {{ object.shares }}</li>
+	<li>Portfolio Value: {{ object.last_pv }}</li>
+	<li>Ending Value: {{ object.last_value }}</li>
+	<li>Ending Cash: {{ object.last_cash }}</li>
+	<li>Capital Balance: {{ object.capital_used }}</li>
+	<li>Expected Dividend: {{ object.expected_dividend }}</li>
+	<li>Dividend Period: {{ object.div_period }}</li>
+	<li>Sum of Dividend : {{ object.dividend_sum }}</li>
+        <li>Expectecd Return: {{ object.expected_return }}%</li>
+        <li>Expectecd Dividend Return: {{ object.expected_dividend_return }}%</li>
+	<br>
+	<li>Trading Simulation:</li>
+	<img src="{{ object.bt_path }}" alt={{ object.name }}>
+	<li>Portpolio Value:</li>
+	<img src="{{ object.pv_path }}" alt={{ object.name }}>
+    </ul>
+{% endblock content %}
+~                      

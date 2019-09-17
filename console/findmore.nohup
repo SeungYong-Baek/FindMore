@@ -1,0 +1,4 @@
+source /home/seungyong/zipline/bin/activate
+sudo systemctl restart nginx
+uwsgi --stop /tmp/findmore_uwsgi.pid
+nohup uwsgi --ini /home/seungyong/FindMore/FindMore/findmore_uwsgi.ini &

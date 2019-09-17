@@ -1,0 +1,15 @@
+{% extends "base_bah.html" %}
+
+{% block content %}
+    <p>Buy And Hold<p>
+    <ul>
+            <li><a href="/bah/create/">Backtest</a></li>
+        
+        {% for model_name in model_list %}
+            {% with "bah:"|add:model_name|lower as urlvar %}
+	    <li><a href="{% url urlvar %}">Buy And Hold List</a></li>
+            {% endwith %}
+        {% endfor %}
+   
+    </ul>
+{% endblock content %}

@@ -1,0 +1,12 @@
+{% extends "base_mra.html" %}
+
+{% block content %}
+<p>Mean Reversion Analysis Delete</p>
+
+<form action="" method="post">
+    {% csrf_token %}
+    <div>Do you want to delete this item "{{ object }}"?</div>
+    <input type="submit" value="Delete">
+</form>
+
+{% endblock content %}

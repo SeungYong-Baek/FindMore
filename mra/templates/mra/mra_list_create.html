@@ -1,0 +1,13 @@
+{% extends "base_mra.html" %}
+
+{% block content %}
+<p>Mean Reversion Analysis Create</p>
+
+<form action="" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Analyze">
+</form>
+
+{% endblock content %}
+~                      

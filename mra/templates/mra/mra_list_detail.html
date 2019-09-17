@@ -1,0 +1,23 @@
+{% extends "base_mra.html" %}
+
+{% block content %}
+    <p>Mean Reversion Analysis Detail</p>
+    <p>{{ object.name }}</p>
+    <ul>
+        <li>Created Date: {{ object.created }}</li>
+        <li>Start Date: {{ object.start_date }}</li>
+        <li>End Date: {{ object.end_date }}</li>
+        <li>ADF: {{ object.adf }}</li>
+        <li>ADF p-value: {{ object.adf_pv }}</li>
+        <li>ADF 1% SL: {{ object.adf_one }}</li>
+        <li>ADF 5% SL: {{ object.adf_five }}</li>
+        <li>Hurst: {{ object.hurst }}</li>
+        <li>Half Life: {{ object.half_life }}</li>
+        <li>Mean: {{ object.mean }}</li>
+        <li>Stand Deviation: {{ object.sd }}</li>
+        <li>Volume: {{ object.volume }}</li>
+        <li>Quantile: {{ object.quantile_q1 }}, {{ object.quantile_q2 }}, {{ object.quantile_q3 }}</li>
+	<img src="{{ object.quantile_path }}" alt={{ object.name }}>
+    </ul>
+{% endblock content %}
+~                      

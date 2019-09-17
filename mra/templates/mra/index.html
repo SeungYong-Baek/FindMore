@@ -1,0 +1,15 @@
+{% extends "base_mra.html" %}
+
+{% block content %}
+    <p>Mean Reversion Analysis<p>
+    <ul>
+            <li><a href="/mra/create/">Analyze</a></li>
+        
+        {% for model_name in model_list %}
+            {% with "mra:"|add:model_name|lower as urlvar %}
+	    <li><a href="{% url urlvar %}">Analysis List</a></li>
+            {% endwith %}
+        {% endfor %}
+   
+    </ul>
+{% endblock content %}

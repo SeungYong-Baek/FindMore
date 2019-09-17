@@ -1,0 +1,15 @@
+{% extends "base_sma.html" %}
+
+{% block content %}
+    <p>Simple Moving Average<p>
+    <ul>
+            <li><a href="/sma/create/">Backtest</a></li>
+        
+        {% for model_name in model_list %}
+            {% with "sma:"|add:model_name|lower as urlvar %}
+	    <li><a href="{% url urlvar %}">Simple Moving Average List</a></li>
+            {% endwith %}
+        {% endfor %}
+   
+    </ul>
+{% endblock content %}

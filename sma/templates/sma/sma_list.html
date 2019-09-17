@@ -1,0 +1,13 @@
+{% extends "base_sma.html" %}
+
+{% block content %}
+    <p>Simple Moving Average List</p>
+    <ul>
+        {% for object in object_list %}
+	    <li><a href="{% url 'sma:sma_detail' object.id %}">
+	    {{ object.name }} / {{ object.created }} / {{ object.start_date }} ~ {{ object.end_date }}</a> |
+	    <a href="{% url 'sma:sma_delete' pk=object.id %}"><font color="red"> Delete </font></a></li>
+        {% endfor %}
+    </ul>
+{% endblock content %}
+

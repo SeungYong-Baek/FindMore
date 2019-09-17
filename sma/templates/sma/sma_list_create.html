@@ -1,0 +1,13 @@
+{% extends "base_sma.html" %}
+
+{% block content %}
+<p>Simple Moving Average Create</p>
+
+<form action="" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Backtest">
+</form>
+
+{% endblock content %}
+~                      

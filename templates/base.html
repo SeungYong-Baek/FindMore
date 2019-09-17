@@ -1,0 +1,24 @@
+<html>
+    
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static "admin/css/base.css" %}"/>
+    {% block title %}<title>FindMore Something</title>{% endblock %}
+</head>
+
+<body>
+    <div id="sidebar">
+        {% block sidebar %}
+            <ul>
+	        <li><a href="/">FindMore Home</a>
+	        <li><a href="/admin/">Admin Home</a>
+	    </ul>
+        {% endblock %}
+    </div>
+
+    <div id="content">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+
+</html>
