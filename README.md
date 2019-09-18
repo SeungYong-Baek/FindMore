@@ -1,7 +1,7 @@
 # FindMore - Web based Stock Analysis
 
 ## Packages
-* Python - Python 3.5, Pandas, Numpy, FinanceDataReader, matplotlib, statsmodels
+* Python - Python 3.5, Pandas, FinanceDataReader, matplotlib, statsmodels
 * Django - Nginx, uWSGI
 * Backtesting - Zipline(Quantopian)
 
