@@ -7,10 +7,10 @@
 
 ## Supported Features
 ### 1. Mean Reversion Analysis - Augmented Dickey Fuller Test, Hurst exponent, Half Life, Quantile
-![Mean Reversion Analysis](C:\Users\seungyon\Downloads\MRA.png)
+![Mean Reversion Analysis](/MRA.png)
 
 ### 2. Buy(regularly) and Hold - Zipine Backtest
-![Buy And Hold](C:\Users\seungyon\Downloads\BAH.png)
+![Buy And Hold](/BAH.png)
 
 ### 3. Simple Moving Average - Zipine Backtest
-![Simple Moving Average](C:\Users\seungyon\Downloads\SMA.png)
+![Simple Moving Average](/SMA.png)
