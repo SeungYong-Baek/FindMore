@@ -1,6 +1,16 @@
 <html>
     
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-78613930-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-78613930-1');
+    </script>
+
     {% load static %}
     <link rel="stylesheet" href="{% static "admin/css/base.css" %}"/>
     {% block title %}<title>FindMore Something</title>{% endblock %}
