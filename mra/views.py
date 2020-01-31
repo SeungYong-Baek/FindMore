@@ -105,9 +105,9 @@ class MRACreateView(CreateView):
         mra.mean = df['Close'].mean()
         mra.sd = df['Close'].std()
         mra.volume = df['Volume'].mean()
-        mra.quantile_q1 = df['Close'].quantile(.25)
+        mra.quantile_q1 = df['Close'].quantile(.15)
         mra.quantile_q2 = df['Close'].quantile(.5)
-        mra.quantile_q3 = df['Close'].quantile(.75)
+        mra.quantile_q3 = df['Close'].quantile(.85)
         mra.quantile_path = static_path
 
         form.save() 
