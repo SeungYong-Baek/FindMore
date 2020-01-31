@@ -11,7 +11,7 @@
 ![Mean Reversion Analysis](/mra/MRA.png)
 ------------------------------------------------
 
-### 2. Analysis with Google Data Studio
+### 2. Mean Reversion Analysis with Google Data Studio
 
 ![Analysis with Google Data Studio](/mra/MRA_GOOGLE_DS.png)
 ------------------------------------------------
