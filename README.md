@@ -2,7 +2,7 @@
 
 ## Packages
 * Python - Python 3.5, Pandas, FinanceDataReader, matplotlib, statsmodels
-* Django - Nginx, uWSGI
+* Django - Nginx, uWSGI, MySQL
 * Backtesting - Zipline(Quantopian)
 
 ## Supported Features
