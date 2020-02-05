@@ -14,7 +14,6 @@
 ### 2. Mean Reversion Analysis with Google Data Studio
 
 ![Analysis with Google Data Studio_1](/mra/MRA_GOOGLE_DS_1.png)
-![Analysis with Google Data Studio_2](/mra/MRA_GOOGLE_DS_2.png)
 ------------------------------------------------
 
 ### 3. Buy(regularly) and Hold - Zipine Backtest
