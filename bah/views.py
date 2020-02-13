@@ -139,10 +139,10 @@ class BAHCreateView(CreateView):
         bah.capital_used = sum(result.capital_used)
         if result.positions.values[-1] == []:
             bah.shares = 0
-            bah.expected_return = ((result.ending_cash[-1]/capital_base)-1)*100
+            bah.expected_return = ((result.ending_cash[-1]/sum(result.capital_used))-1)*100
         elif result.positions.values[-1] != []:
             bah.shares = result.positions.values[-1][0]['amount']
-            bah.expected_return = ((result.portfolio_value[-1]/capital_base)-1)*100
+            bah.expected_return = ((result.portfolio_value[-1]/sum(result.capital_used))-1)*100
 
         bah.bt_path = bt_static_path
         bah.pv_path = pv_static_path
