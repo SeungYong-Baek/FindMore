@@ -150,10 +150,10 @@ class SMACreateView(CreateView):
         sma.capital_used = sum(result.capital_used)
         if result.positions.values[-1] == []: 
             sma.shares = 0
-            sma.expected_return = ((result.ending_cash[-1]/sum(result.capital_used))-1)*100
+            sma.expected_return = ((result.ending_cash[-1]/capital_base)-1)*100
         elif result.positions.values[-1] != []:
             sma.shares = result.positions.values[-1][0]['amount']
-            sma.expected_return = ((result.portfolio_value[-1]/sum(result.capital_used))-1)*100
+            sma.expected_return = ((result.portfolio_value[-1]/capital_base)-1)*100
         sma.bt_path = bt_static_path
         sma.pv_path = pv_static_path
 
