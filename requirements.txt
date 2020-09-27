@@ -3,7 +3,7 @@ attrs==19.1.0
 backcall==0.1.0
 bcolz==0.12.1
 beautifulsoup4==4.8.0
-bleach==3.1.0
+bleach==3.2.1
 Bottleneck==1.2.1
 bs4==0.0.1
 certifi==2019.6.16
@@ -49,6 +49,7 @@ networkx==1.11
 notebook==6.0.1
 numexpr==2.7.0
 numpy==1.17.2
+packaging==20.4
 pandas==0.22.0
 pandas-datareader==0.7.4
 pandocfilters==1.4.2
