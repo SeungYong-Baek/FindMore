@@ -3,7 +3,7 @@
 ## Packages
 * Python - Python 3.5, Pandas, FinanceDataReader, matplotlib, statsmodels
 * Django - Nginx, uWSGI, MySQL
-* Backtesting - Zipline(Quantopian)
+* Backtesting - Zipline(Quantopian, v1.3.0)
 
 ## Supported Features
 ### 1. Mean Reversion Analysis - Augmented Dickey Fuller Test, Hurst exponent, Half Life, Quantile
