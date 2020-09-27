@@ -15,7 +15,7 @@ cyordereddict==1.0.0
 Cython==0.29.13
 decorator==4.4.0
 defusedxml==0.6.0
-Django==2.2.5
+Django==2.2.13
 empyrical==0.5.3
 entrypoints==0.3
 finance-datareader==0.8.0
