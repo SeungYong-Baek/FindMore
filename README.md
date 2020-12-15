@@ -6,6 +6,7 @@
 * Backtesting - Zipline(Quantopian, v1.3.0)
 
 ## Supported Features
+
 ### 1. Mean Reversion Analysis - Augmented Dickey Fuller Test, Hurst exponent, Half Life, Quantile
 
 ![Mean Reversion Analysis](/mra/MRA.png)
