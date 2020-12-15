@@ -1,11 +1,12 @@
 # FindMore - Web based Stock Analysis
 
 ## Packages
-* Python - Python 3.5, Pandas, FinanceDataReader, matplotlib, statsmodels
+* Python - Python 3.6, Pandas, FinanceDataReader, matplotlib, statsmodels
 * Django - Nginx, uWSGI, MySQL
 * Backtesting - Zipline(Quantopian, v1.3.0)
 
 ## Supported Features
+
 ### 1. Mean Reversion Analysis - Augmented Dickey Fuller Test, Hurst exponent, Half Life, Quantile
 
 ![Mean Reversion Analysis](/mra/MRA.png)
