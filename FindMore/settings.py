@@ -26,7 +26,7 @@ with open('/home/seungyong/FindMore/FindMore/secret_key.txt') as f:
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1','localhost','34.70.126.228']
+ALLOWED_HOSTS = ['127.0.0.1','localhost','192.168.35.99']
 
 
 # Application definition
