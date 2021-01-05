@@ -18,12 +18,12 @@
 ![Analysis with Google Data Studio-2](/mra/MRA_GOOGLE_DS-2.png)
 ------------------------------------------------
 
-### 3. Buy(regularly) and Hold - Zipine Backtest
+### 3. Buy(regularly) and Hold - Zipline Backtest
 
 ![Buy And Hold](/bah/BAH.png)
 ------------------------------------------------
 
-### 4. Simple Moving Average - Zipine Backtest
+### 4. Simple Moving Average - Zipline Backtest
 
 ![Simple Moving Average](/sma/SMA.png)
 ------------------------------------------------
