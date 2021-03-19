@@ -12,7 +12,7 @@ cycler==0.10.0
 cyordereddict==1.0.0
 Cython==0.29.21
 decorator==4.4.2
-Django==3.1.4
+Django==3.1.6
 empyrical==0.5.5
 finance-datareader==0.9.10
 idna==2.10
