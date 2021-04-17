@@ -2,7 +2,7 @@
 
 ## Packages
 * Python - Python 3.6, Pandas, FinanceDataReader, matplotlib, statsmodels
-* Django - Nginx, uWSGI, MySQL
+* Django, Nginx, uWSGI, MySQL
 * Backtesting - Zipline(Quantopian, v1.3.0)
 * FindMore 구성 방법 - https://github.com/SeungYong-Baek/FindMore/wiki
 
