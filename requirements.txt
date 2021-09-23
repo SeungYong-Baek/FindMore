@@ -11,8 +11,9 @@ contextlib2==0.6.0.post1
 cycler==0.10.0
 cyordereddict==1.0.0
 Cython==0.29.23
+dango==0.0.0a0
 decorator==5.0.7
-Django==3.2.4
+Django==3.2.7
 empyrical==0.5.5
 finance-datareader==0.9.31
 greenlet==1.0.0
