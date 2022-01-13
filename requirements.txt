@@ -13,7 +13,7 @@ cyordereddict==1.0.0
 Cython==0.29.23
 dango==0.0.0a0
 decorator==5.0.7
-Django==3.2.10
+Django==3.2.11
 empyrical==0.5.5
 finance-datareader==0.9.31
 greenlet==1.0.0
